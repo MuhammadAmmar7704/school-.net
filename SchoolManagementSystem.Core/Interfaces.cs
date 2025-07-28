@@ -2,6 +2,23 @@ using SchoolManagementSystem.Core.Models;
 
 namespace SchoolManagementSystem.Core.Interfaces
 {
+    public interface IAdminService
+    {
+        IEnumerable<Admin> GetAllAdmins();
+        Admin? GetAdminById(int id);
+        void AddAdmin(Admin admin);
+        void UpdateAdmin(Admin admin);
+        void DeleteAdmin(int id);
+    }
+
+    public interface ITeacherService
+    {
+        IEnumerable<Teacher> GetAllTeachers();
+        Teacher? GetTeacherById(int id);
+        void AddTeacher(Teacher teacher);
+        void UpdateTeacher(Teacher teacher);
+        void DeleteTeacher(int id);
+    }
     public interface IUserService
     {
         User Authenticate(string username, string password);

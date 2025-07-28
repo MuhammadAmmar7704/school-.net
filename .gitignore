@@ -1,0 +1,27 @@
+# .NET
+bin/
+obj/
+*.user
+*.suo
+*.userosscache
+*.sln.docstates
+
+# Visual Studio Code
+.vscode/
+
+# OS generated
+.DS_Store
+Thumbs.db
+
+# Logs
+*.log
+
+# EF Core Migrations
+Migrations/
+
+# Sensitive config
+SchoolManagementSystem.API/appsettings.Development.json
+SchoolManagementSystem.API/appsettings.json
+
+# Docker
+*.pid
